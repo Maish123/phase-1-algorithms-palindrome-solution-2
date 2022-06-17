@@ -1,6 +1,16 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  for(let i = 0; i < word.length/2; i++){
+    //const j = word.length - 1 - i;
+    let startChar = word[i];
+    let endChar = word[word.length - 1 - i];
+
+    if(startChar !== endChar) return false;   
+  }
+  return true;
+};
+
+console.log(isPalindromeTwo("mom"));
 
 /* 
   Add your pseudocode here
